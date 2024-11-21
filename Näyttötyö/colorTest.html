@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Värien testaus</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="https://img.icons8.com/?size=50&id=4922&format=png" type="image/x-icon">
+    </head>
+    <body id="colorPage">
+        <script src="index.js"></script>
+
+        <div>
+            <!-- Lisätään napit joista liikutaan sivujen välillä -->
+            <a href="index.html"><button class="mainPgBtn">Etusivu</button ></a>
+            <a href="palvelut.html"><button class="mainPgBtn">Palvelut</button ></a>
+            <a href="galleria.html"><button class="mainPgBtn">Galleria</button ></a>
+            <a href="contacts.html"><button class="mainPgBtn">Yhteystiedot</button></a>    
+        </div>
+
+        <div class="indexDiv">
+            <h1>Suunnittele</h1>
+
+            <!-- Lisätään ikkuna johon kaikki värit tulee -->
+            <div class="window">
+                <div class="windowLeft" id="windowLeft" onclick="windowSelect(this)"></div>
+                <div class="windowRight" id="windowRight" onclick="windowSelect(this)"></div>
+            </div>
+
+            <!-- Lisätään nappi joka tyhjentää ikkunan -->
+            <button class="clearBtn" onclick="clearWindow()">Tyhjennä</button><br>
+            
+            <!-- Lisätään napit joista väriä voi vaihtaa -->
+            <button style="background-color: #DD4132;" onclick="colorSelect(this)" class="colorBtn">Fiesta,<br> #DD4132</button>
+            <button style="background-color: #9E1030;" onclick="colorSelect(this)" class="colorBtn">Jester Red,<br> #9E1030</button>
+            <button style="background-color: #FE840E;" onclick="colorSelect(this)" class="colorBtn">Turmeric,<br> #FE840E</button>
+            <button style="background-color: #FF6F61;" onclick="colorSelect(this)" class="colorBtn">Living Coral,<br> #FF6F61</button><br>
+
+            <button style="background-color: #C62168;" onclick="colorSelect(this)" class="colorBtn">Pink Peacock,<br> #C62168</button>
+            <button style="background-color: #8D9440;" onclick="colorSelect(this)" class="colorBtn">Pepper Stem,<br> #8D9440</button>
+            <button style="background-color: #FFD662;" onclick="colorSelect(this)" class="colorBtn">Apend Gold,<br> #FFD662</button>
+            <button style="background-color: #00539C;" onclick="colorSelect(this)" class="colorBtn">Princess Blue,<br> #00539C</button><br>
+
+            <button style="background-color: #755139;" onclick="colorSelect(this)" class="colorBtn">Toffee,<br> #755139</button>
+            <button style="background-color: #D69C2F;" onclick="colorSelect(this)" class="colorBtn">Mango Mojito,<br> #D69C2F</button>
+            <button style="background-color: #616247;" onclick="colorSelect(this)" class="colorBtn">Terrarium Moss,<br> #616247</button>
+            <button style="background-color: #E8B5CE;" onclick="colorSelect(this)" class="colorBtn">Sweet Lilac,<br> #E8B5CE</button><br>
+
+            <button style="background-color: #D2C29D;" onclick="colorSelect(this)" class="colorBtn">Soybean,<br> #D2C29D</button>
+            <button style="background-color: #343148;" onclick="colorSelect(this)" class="colorBtn">Eclipse,<br> #343148</button>
+            <button style="background-color: #F0EAD6;" onclick="colorSelect(this)" class="colorBtn">Sweet Corn,<br> #F0EAD6</button>
+            <button style="background-color: #615550;" onclick="colorSelect(this)" class="colorBtn">Brown Granite,<br> #615550</button>
+        </div>
+    </body>
+</html>
