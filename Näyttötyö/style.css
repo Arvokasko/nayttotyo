@@ -55,7 +55,6 @@ button {
 }
 /* etusivu */
 #etusivu {
-    background-size: cover;
     color: white;
 }
 .mainPgImg {
@@ -147,7 +146,7 @@ button {
     border: transparent;
     box-shadow: 0 0 15px black;
     background-color: rgba(0, 0, 0, 0.377);
-    width: 10%;
+    width: 100px;
     cursor: pointer;
     transition: 150ms ease;
 }
